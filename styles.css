@@ -1,0 +1,135 @@
+body{
+	font-family:"Open Sans";
+	font-size: 15px;
+	margin: 0px;
+	background-color: #6b5437;
+}
+table {
+  border-top: 1px solid black;
+}
+.clear{
+  clear: both;
+}
+.container{
+width: 1200px;
+margin: 0 auto;
+}
+.navigation{
+	height: 94px;
+  background-color: #473a2d;
+}
+.navigation__logo{
+	float: left;
+	margin:25px 80px 14px 0;
+}
+ul {
+	margin: 0px;
+    padding-top: 35px;
+    float: right;
+}
+li {
+	padding: 15 40px;
+	display: inline;
+	color: #e9e7e5;
+}
+li:hover{
+	background-color: #5b4d3b;
+}
+.ru{
+	padding-right: 5px;
+	height: 60px;
+	border-left: 1px solid white;
+
+}
+.en	{
+	padding-left:  5px;
+}
+.slider{
+	position: relative;
+	background-image: url('img/slider.jpg'); /*? */
+	background-size: 100% 100%;
+	width: auto;
+	height: 595px;
+}
+.slider__absolutetex1{
+	position: absolute;
+	font-size: 44px;
+	padding:20px;
+	background-color: rgba(0,0,0,0.5);
+	margin-top:200px;
+	margin-left: 100px;
+	color: #e9e7e5;
+}
+.slider__absolutetex2{
+	position: absolute;
+	font-size: 24px;
+	padding:20px;
+	background-color: rgba(0,0,0,0.5);
+	margin-top:320px;
+	margin-left: 100px;
+	color: #e9e7e5;
+}
+.slider__leftarrow{
+position: absolute;
+margin-top: 285px;
+
+}
+.slider__rightarrow{
+position: absolute;
+margin-top: 285px;
+margin-left: 1175px;
+}
+.content{
+
+}
+.content--textured{
+min-height:650px;
+background-image: url('img/backgroundslice.jpg');
+}
+.content__h1{
+
+	margin: 0 auto 50px auto ;
+	padding-top: 40px;
+	font-size: 30px;
+	text-align: center;
+	color: #95782d;
+	border-bottom: dotted #7f7064;
+	padding-bottom: 40px;
+}
+.col-3{
+	width: 33.33%;
+	float: left;
+}
+.col-3__img {
+  margin-right;
+	float: left;
+}
+.col-3__h1{
+  margin-top: -10px;
+  margin-left: 70px;
+}
+.col-3__p1{
+margin-left: 55px;
+display: block;
+text-align: left;
+}
+.col-3__line{
+  width: 40px;
+  border-bottom: 1px solid #c6c3bc;
+  display: inline-block;
+
+}
+.col-2-left{
+  float: left;
+  width: 45%;
+}
+.col-2-right{
+  float: right;
+  width: 45%;
+}
+.round-img {
+border-radius: 50%;
+border: 9px solid #97804e;
+margin:20px auto 15px auto;
+display: block;
+	}
