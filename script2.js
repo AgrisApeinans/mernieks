@@ -5,6 +5,8 @@ window.smoothScroll();
                     ///Paslēpt return arrow///
 
 var returnDiv = document.getElementsByClassName('return-div')[0];
+
+
 function hideReturnDiv() {
     var scrollTop = (typeof window.scrollY !== "undefined") ? window.scrollY : document.documentElement.scrollTop;
     if (scrollTop > 500) {
