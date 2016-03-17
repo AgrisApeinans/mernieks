@@ -1,4 +1,3 @@
-                    ///scroll function///
 
 window.smoothScroll();
 
@@ -6,6 +5,7 @@ window.smoothScroll();
 
 var returnDiv = document.getElementsByClassName('return-div')[0];
 
+                     ////////Paslēpt return arrow////////
 
 function hideReturnDiv() {
     var scrollTop = (typeof window.scrollY !== "undefined") ? window.scrollY : document.documentElement.scrollTop;
@@ -17,7 +17,6 @@ function hideReturnDiv() {
 }
 window.onscroll = hideReturnDiv;
 
-                    ///Carousel///
 
 var slider=document.querySelector("[data-plugin=slider]");
 window.sliderFunct(slider);
