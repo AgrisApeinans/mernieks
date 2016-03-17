@@ -1,0 +1,85 @@
+@media (max-width: 1090px){
+    .header .container{
+        text-align: center;
+    }
+    .nav__logo{
+        float: none;
+    }
+    .nav, .nav__main, .nav__lang{
+        float: none;
+    }
+    .nav__lang::before{
+        height: 30px;
+        margin-top: -15px;
+    }
+    .slider{
+        height: 500px;
+    background-size: 100% 100%;
+    }
+}
+
+@media (max-width: 1000px){
+    .slider{
+        height: 400px;
+    background-size: 100% 100%;
+    }
+    .slider__h1{
+        font-size: 35px;
+    }
+    .slider__h2{
+        font-size: 20px;
+    }
+    .col-3__img{
+        float: none;
+        margin: 0;
+    }
+    .content--textured .col-3{
+        text-align: center;
+        width: 31%;
+        float: left;
+        margin-left: 3%;
+    }
+    .content--textured .col-3:first-of-type{
+        margin-left: 0;
+    }
+    .container:nth-child(6){
+        text-align: center;
+    }
+    .col-3{
+        display: inline-block;
+        float: none;
+        width: 75%;
+        margin-bottom: 40px;
+    }
+    fieldset{
+        text-align: left;
+    }
+
+}
+@media (max-width: 910px){
+    .col-2:first-of-type{
+        margin: 0;
+    }
+    .col-2{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .certs{
+        width: 60%;
+        display: inline-block;
+    }
+    .col-2 p,table{
+        text-align: left;
+    }
+    .content--textured .col-3{
+        display: inline-block;
+        float: none;
+        width: 75%;
+        margin-bottom: 40px;
+        margin-left: 0;
+    }
+    .content--textured .container{
+        text-align: center;
+    }
+}

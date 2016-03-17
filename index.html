@@ -4,11 +4,14 @@
 <head>
 	<title>Ventspils Mernieks</title>
 	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="responsive.css">
 	<meta charset="UTF-8">
+
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,200&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 </head>
 
-<body>
+<body id="top">
+
 	<div class="header">
 		<div class="container cf">
 			<a href="#">
@@ -17,11 +20,11 @@
 			<div class="nav">
 				<div class="nav__main">
 					<ul class="nav__ul">
-						<li><a href="#">Sākums</a></li>
-						<li><a href="#">Pakalpojumi</a></li>
+						<li><a href="#top">Sākums</a></li>
+						<li><a href="#pakalpojumi" >Pakalpojumi</a></li>
 						<li><a href="#parmums">Par mums</a></li>
-						<li><a href="#">Klienti</a></li>
-						<li><a href="#">Kontakti</a></li>
+						<li><a href="#clients">Klienti</a></li>
+						<li><a href="#contacts" >Kontakti</a></li>
 					</ul>
 				</div>
 				<div class="nav__lang">
@@ -34,12 +37,33 @@
 		</div>
 	</div>
 
-	<div class="slider">
-		<div class="container cf">
-			<div class="slider__text">
-				<div class="slider__h1">Mērniecība</div>
-				<div class="slider__h2">Zemesgabalu robežu uzmērīšana zemes un būvju reģistrācijai</div>
+	<div class="slider" data-plugin="slider">
+			<div class="slider-item slider-item1 active">
+				<div class="container cf">
+					<div class="slider__text">
+						<div class="slider__h1">Mērniecība</div>
+						<div class="slider__h2">Zemesgabalu robežu uzmērīšana zemes un būvju reģistrācijai</div>
+					</div>
+				</div>
 			</div>
+			<div class="slider-item slider-item2 ">
+				<div class="container cf">
+					<div class="slider__text">
+						<div class="slider__h1">Ģeodezija</div>
+						<div class="slider__h2">Topogrāfiskā uzmērīšana un plānu izgatavošana mērogā 1:250, 1:500, 1:1000, 1:2000</div>
+					</div>
+				</div>
+			</div>
+			<div class="slider-item slider-item3 ">
+				<div class="container cf">
+					<div class="slider__text">
+						<div class="slider__h1">Zemes ierīcība</div>
+						<div class="slider__h2">Zemes ierīcības projektu izstrāde</div>
+					</div>
+				</div>
+			</div>
+		<div class="container cf">
+
 			<a href="#">
 				<img class="slider__prev" src="img/leftarrow.png">
 			</a>
@@ -47,15 +71,15 @@
 				<img class="slider__next" src="img/rightarrow.png">
 			</a>
 			<div class="slider__buttons">
-				<button class="button"></button>
 				<button class="button active"></button>
+				<button class="button "></button>
 				<button class="button"></button>
 			</div>
 		</div>
 	</div>
 	<div class="content--textured">
 		<div class="container cf">
-			<h1 class="content__heading">
+			<h1 class="content__heading" id="pakalpojumi">
 				PAKALPOJUMI
 			</h1>
 			<div class="col-3">
@@ -214,7 +238,7 @@
 	</div>
 	<div class="content--textured">
 		<div class="container cf">
-			<h1 class="content__heading">KLIENTI</h1>
+			<h1 class="content__heading" id="clients">KLIENTI</h1>
 			<div class="logo-line">
 				<a class="logo-line__img" href="#">
 					<img src="img/LRZMbnw.png">
@@ -279,14 +303,14 @@
 					<img src="img/latio.png">
 				</a>
 				<a class="logo-line__img" href="#">
-					<img src="img/VPPbnw.png">
+					<img src="img/VPPbnw.png">b
 					<img src="img/VPP.png">
 				</a>
 			</div>
 		</div>
 	</div>
 	<div class="container cf">
-		<h1 class="content__heading">KONTAKTI</h1>
+		<h1 class="content__heading" id="contacts">KONTAKTI</h1>
 		<div class="col-3">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2150.134309358612!2d21.546105115486075!3d57.39084987193894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46f1c8ff1d9b370d%3A0xd96ace88f9ebee0d!2sVasarn%C4%ABcu+iela+9%2C+Ventspils%2C+LV-3601!5e0!3m2!1sen!2slv!4v1450176165683"
 			allowfullscreen></iframe>
@@ -302,26 +326,35 @@
 			</address>
 		</div>
 		<div class="col-3">
-			<form class="contact-form" action="action_page.php">
+			<form class="contact-form">
 				<fieldset>
 					<legend>SAZINĀTIES AR MUMS</legend>
 					<div class="form__inputs">
-						<input type="text" value="Vārds">
-						<input class="form__input2" type="text" value="e-pasts">
+						<div class="form__input1-wrap">
+							<input class="form__input1" data-input-type="text" type="text" placeholder="Vārds">
+						</div>
+						<div class="form__input2-wrap">
+							<input class="form__input2" data-input-type="email" type="text" placeholder="e-pasts">
+						</div>
+						<div class="form__input3-wrap">
+							<textarea class="form__input3" data-input-type="text" cols="50" rows="10" placeholder="Teksts..."></textarea>
+						</div>
+					<button type="submit" class="send-form"> Sūtīt &#8594;</button>
 					</div>
-					<textarea cols="50" rows="10">Teksts...</textarea>
-					<button> Sūtīt &#8594;</button>
 				</fieldset>
 			</form>
 		</div>
 
 	</div>
-	<a href="#">
-		<div class="return">
+		<div class="return-div box" href="#top">
 			<div class="return__arrow">
 			</div>
 		</div>
-	</a>
+		<script src="slider.js"></script>
+		<script src="smoothScroll.js"></script>
+		<script src="formValid.js"></script>
+		<script src="script2.js"></script>
+
 </body>
 
 </html>
