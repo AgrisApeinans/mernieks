@@ -12,7 +12,6 @@
     }
     for(var i=0;i<inputs.length;i++){
         inputType=inputs[i].getAttribute("data-input-type");
-        console.log(inputs[i].getAttribute("data-input-type"));
         if(inputType=="text"){
             if(inputs[i].value.trim()==""){
                 errors.input1Error="Aizpildiet visus laukumus! ";
@@ -27,9 +26,7 @@
     if (Object.keys(errors).length > 0){
         inputDiv.appendChild(bubble);
         var value="";
-        console.log(errors);
         for(var key in errors) {
-            console.log(key);
             value+= errors[key];
             bubble.innerHTML=value;
         }

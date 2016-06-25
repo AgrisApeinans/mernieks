@@ -1,3 +1,4 @@
+
 .cf:before, .cf:after {
     content: " ";
     display: table;
@@ -63,6 +64,12 @@ a {
     padding: 10px 30px;
     display: inline;
     color: #e9e7e5;
+    background-color: transparent;
+    -webkit-transition: background-color .2s linear;
+    -moz-transition: background-color .2s linear;
+    -ms-transition: background-color .2s linear;
+    -o-transition: background-color .2s linear;
+    transition: background-color .2s linear;
 }
 .nav__ul li:hover {
     background-color: #5b4d3b;
@@ -92,7 +99,7 @@ a {
     height: 595px;
 }
 
-.slider-item {
+.slider__item {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -102,16 +109,16 @@ a {
     background-position: center;
     transition: opacity 0.5s;
 }
-.slider-item:not(.active) {
+.slider__item:not(.active) {
     opacity: 0;
 }
-.slider-item1{
+.slider__item1{
     background-image: url("img/slider.png");
 }
-.slider-item2{
+.slider__item2{
     background-image: url("img/slider2.jpg");
 }
-.slider-item3{
+.slider__item3{
     background-image: url("img/slider3.png");
 }
 
@@ -139,7 +146,7 @@ a {
 }
 .slider__next {
     right: 0;
-    margin-right: 74px;
+    margin-right: 5%;
 }
 .slider__buttons {
     position: absolute;

@@ -1,7 +1,7 @@
 (function(window, document){
     var plugin=function(sliderElement){
         //dabūt aktīvā elementa indeksu, elementu skaitu, nepieciešamos elementus
-        var sliderItems=sliderElement.querySelectorAll(".slider-item");
+        var sliderItems=sliderElement.querySelectorAll(".slider__item");
         var sliderBtns=sliderElement.querySelectorAll(".slider__buttons .button");
         var sliderNext=sliderElement.querySelector(".slider__next");
         var sliderPrev=sliderElement.querySelector(".slider__prev");
@@ -37,7 +37,6 @@
             else{
                 if(this!=sliderBtns.item(activeItemIndx)){
                     btnIndex = [].indexOf.call (this.parentNode.children, this)
-                    console.log(btnIndex);
                     activate(btnIndex, activeItemIndx);
                 }
             }
