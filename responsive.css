@@ -83,3 +83,40 @@
         text-align: center;
     }
 }
+@media (max-width: 700px){
+    .slider__text{
+        width: 60vw;
+        top: 150px;
+        margin-left: 15vw;
+    }
+    .slider__h1{
+        font-size: 4vw;
+        padding: 15px;
+    }
+    .slider__h2{
+        font-size: 3.5vw;
+        padding: 15px;
+    }
+}
+@media (max-width: 500px){
+    .nav{
+        margin: 0;
+    }
+    .nav__ul{
+        padding: 0;
+    }
+    .nav__ul li{
+        display: block;
+        list-style: none;
+    }
+    .nav__lang::before{
+        margin-left: 0;
+    }
+    .nav__lang ul{
+        padding: 0;
+    }
+    .nav__lang li{
+        display: inline;
+    }
+
+}
